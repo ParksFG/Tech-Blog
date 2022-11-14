@@ -15,7 +15,7 @@
             <ul id="navList">
                 <li class="navLink"><a class="navClick" href="/">Home</a></li>
                 <li class="navLink"><a class="navClick" href="/api/dashboard">Dashboard</a></li>
-                {{#if session.logged_in}}
+                {{#if session.loggedIn}}
                 <li class="navLink"><a class="navClick" href="#">Logout</a></li>
                 {{else}}
                 <li class="navLink"><a class="navClick" href="/login">Login/SignUp</a></li>
