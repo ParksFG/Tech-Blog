@@ -2,7 +2,7 @@ module.exports = {
     formatTime: (date) => {
         return date.toLocaleTimeString();
     },
-    formateDate: (date) => {
-        return `${new Date(date).getMonth() + 1}/${new Date()}/${new Date(date).getFullYear()}}`;
+    formatDate: (date) => {
+        return `${new Date(date).getMonth() + 1}/${new Date(date).getDate()}/${new Date(date).getFullYear()}`;
     }
 };
