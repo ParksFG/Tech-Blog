@@ -17,7 +17,7 @@ router.get('/', async (req, res) => {
             loggedIn: req.session.loggedIn
         })
     } catch (error) {
-        res.status(500).json(err.message);
+        res.status(500).json(error.message);
     }
 });
 
@@ -53,7 +53,7 @@ router.get('/posts/:id', withAuth, async (req, res) => {
             loggedIn: req.session.loggedIn
         })
     } catch (error) {
-        res.status(500).json(err.message);
+        res.status(500).json(error.message);
     }
 });
 
