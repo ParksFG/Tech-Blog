@@ -1,0 +1,17 @@
+<div class="newPostContainer" id="postCard">
+    <h3 class="card-header" id="newTitle">Create New Post</h2>
+    <form class="newPostForm" id="newPostForm">
+        <input type="hidden" name="post-id" value="{{post.id}}" />
+        <div>
+            <label class="formLabel">Title</label>
+            <input class="formInput" type="text" name="postTitle" />
+        </div>
+        <div>
+            <label class="formLabel">Content</label>
+            <textarea class="formInput2" name="postBody" data-number="8"></textarea>
+        </div>
+
+        <button type="submit" class="loginBtn" id="saveBtn">Create</button>
+    </form>
+</div>
+<script src="/js/newPost.js"></script>

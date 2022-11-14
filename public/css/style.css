@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root {
+    --darkBrown: #231010;
+    --lightBlue: #D9EAD3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+    background: var(--lightBlue);
+}
+
+/* Header */
+
+header {
+    background: var(--darkBrown);
+    padding: 15px 50px;
+}
+
+#navList {
+    margin-bottom: 15px;
+}
+
+.navLink {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.navClick {
+    text-decoration: none;
+    color: var(--lightBlue);
+}
+
+.navClick:hover {
+    text-decoration: underline;
+}
+
+#headerName {
+    background: var(--lightBlue);
+    color: var(--darkBrown);
+    padding: 5px 15px;
+    width: 10%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px #A7A7A7;
+}
+
+.signedIn {
+    margin-left: 15px;
+}
+
+/* Posts */
+
+#postClick {
+    text-decoration: none;
+}
+
+.postContainer {
+    background: var(--darkBrown);
+    padding: 10px 0px 2px;
+    margin: 25px 50px;
+}
+
+.postContainer h3, h5 {
+    color: var(--lightBlue);
+    display: inline;
+    margin: 10px 10px;
+}
+
+.postContainer h5 {
+    float: right;
+}
+
+.postContainerText {
+    background: var(--lightBlue);
+    margin: 10px 4px 2px;
+    padding: 10px;
+    color: var(--darkBrown);
+}
+
+/* Signin/Signup */
+
+.loginContainer {
+    background: var(--darkBrown);
+    color: var(--lightBlue);
+    padding: 10px;
+    margin: 25px 50px;
+}
+
+.loginForm, .signupForm {
+    background-color: var(--lightBlue);
+    color: var(--darkBrown);
+    padding: 5px;
+    margin: 5px;
+}
+
+
+.formLabel {
+    display: block;
+}
+
+.formInput {
+    width: 99%;
+    height: 20px;
+}
+
+.loginBtn {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0px 0px;
+}
+
+.loginOR {
+    text-align: center;
+}
+
+/* Single Post */
+
+.makeCommentBox {
+    background: var(--darkBrown);
+    padding: 10px 0px 2px;
+    margin: 25px 50px;
+}
+
+.commentForm {
+    background: var(--lightBlue);
+    margin: 25px 4px 2px;
+    padding: 10px;
+    color: var(--darkBrown);
+}
+
+.commentTextarea {
+    resize: none;
+    width: 100%;
+}
+
+.commentContainer {
+    background: var(--darkBrown);
+    padding: 10px 0px 2px;
+    margin: 25px 50px;
+    color: var(--lightBlue);
+}
+
+.commentContainer h3 {
+    margin-left: 15px;
+}
+
+.commentContent {
+    background: var(--lightBlue);
+    margin: 5px 4px 2px;
+    padding: 10px;
+    color: var(--darkBrown);
+}
+
+/* Dashboard */
+
+#newPost {
+    margin: auto;
+    width: 25%;
+    background: var(--darkBrown);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#newPost a {
+    display: block;
+    color: var(--lightBlue);
+    text-decoration: none;
+    text-align: center;
+}
+
+.newPostContainer {
+    background: var(--darkBrown);
+    color: var(--lightBlue);
+    padding: 10px;
+    margin: 25px 50px;
+}
+
+.newPostForm {
+    background-color: var(--lightBlue);
+    color: var(--darkBrown);
+    padding: 5px;
+    margin: 5px;
+}
+
+.formInput2 {
+    width: 99%;
+    height: 100px;
+    resize: none;
+}

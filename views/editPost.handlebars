@@ -1,0 +1,18 @@
+<div class="newPostContainer" id="postCard">
+    <h3 class="card-header" id="newTitle">Edit Post</h2>
+    <form class="editPostForm" id="newPostForm">
+        <input type="hidden" name="postID" value="{{post.id}}" />
+        <div>
+            <label class="formLabel">Title</label>
+            <input class="formInput" type="text" name="postTitle" value="{{post.title}}"/>
+        </div>
+        <div>
+            <label class="formLabel">Content</label>
+            <textarea class="formInput2" name="postBody" data-number="8">{{post.content}}</textarea>
+        </div>
+
+        <button type="submit" class="loginBtn" id="saveBtn">Update</button>
+    </form>
+    <button type="submit" class="loginBtn" id="deleteBtn">Delete</button>
+</div>
+<script src="/js/editPost.js"></script>

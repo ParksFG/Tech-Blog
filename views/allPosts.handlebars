@@ -1,0 +1,13 @@
+{{#if loggedIn}}
+<div class="signedIn">
+  <h2>You are signed in as {{session.userName}}! </h2>
+</div>
+{{/if}}
+<br>
+{{#if posts.length}}
+<div>
+  {{#each posts as |post|}}
+  {{> postPartials post}}
+  {{/each}}
+</div>
+{{/if}}
