@@ -19,7 +19,7 @@ router.get('/', withAuth, async (req, res) => {
 });
 
 router.get('/new', withAuth, (req, res) => {
-    res.render('new-post', {
+    res.render('newPost', {
         loggedIn: req.session.loggedIn,
     });
 });
@@ -30,7 +30,7 @@ router.get('/edit/:id', withAuth, async (req, res) => {
         if (postData.userID == req.session.userID) {
             const post = postData.get({ plain: true });
             console.log(post);
-            res.render('edit-post', {
+            res.render('editPost', {
                 post,
             });
         } else {
