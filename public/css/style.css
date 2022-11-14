@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+/* universal styling */
+
+:root {
+    --darkBrown: #231010;
+    --lightBlue: #D9EAD3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+    background: var(--lightBlue);
+}
+
+header {
+    background: var(--darkBrown);
+    padding: 15px;
+}
+
+#navList {
+    margin-bottom: 15px;
+}
+
+.navLink {
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.navClick {
+    text-decoration: none;
+    color: var(--lightBlue);
+}
+
+#headerName {
+    background: var(--lightBlue);
+    color: var(--darkBrown);
+    padding: 5px 15px;
+    width: 10%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px #A7A7A7;
+}
