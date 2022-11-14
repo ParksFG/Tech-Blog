@@ -136,3 +136,21 @@ header {
     resize: none;
     width: 100%;
 }
+
+.commentContainer {
+    background: var(--darkBrown);
+    padding: 10px 0px 2px;
+    margin: 25px 50px;
+    color: var(--lightBlue);
+}
+
+.commentContainer h3 {
+    margin-left: 15px;
+}
+
+.commentContent {
+    background: var(--lightBlue);
+    margin: 5px 4px 2px;
+    padding: 10px;
+    color: var(--darkBrown);
+}
