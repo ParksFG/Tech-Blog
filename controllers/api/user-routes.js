@@ -24,7 +24,7 @@ router.post('/login', async (req, res) => {
     try {
         const user = await User.findOne({
             where: {
-                user_name: req.body.userName,
+                userName: req.body.userName,
             },
         });
         const validPW = user.checkPassword(req.body.password);
