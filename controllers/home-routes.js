@@ -38,7 +38,7 @@ router.get('/posts/:id', withAuth, async (req, res) => {
         });
         const commentData = await Comment.findAll({
             where: {
-                postID: req.paramas.id
+                postID: req.params.id
             },
             include: [{
                 model: User,
