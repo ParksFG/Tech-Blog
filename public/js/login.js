@@ -24,7 +24,7 @@ const loginFormHandler = async function (event) {
 const signupFormHandler = async function (event) {
     event.preventDefault();
   
-    const user_name = document.querySelector('#usernameSignup').value.trim();
+    const userName = document.querySelector('#usernameSignup').value.trim();
     const password = document.querySelector('#passwordSignup').value.trim();
     const response = await fetch('/api/user', {
       method: 'POST',
