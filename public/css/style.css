@@ -116,3 +116,23 @@ header {
 .loginOR {
     text-align: center;
 }
+
+/* Single Post */
+
+.makeCommentBox {
+    background: var(--darkBrown);
+    padding: 10px 0px 2px;
+    margin: 25px 50px;
+}
+
+.commentForm {
+    background: var(--lightBlue);
+    margin: 25px 4px 2px;
+    padding: 10px;
+    color: var(--darkBrown);
+}
+
+.commentTextarea {
+    resize: none;
+    width: 100%;
+}

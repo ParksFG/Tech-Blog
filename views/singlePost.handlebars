@@ -1,0 +1,28 @@
+<div class="postContainer">
+  <h3>
+    {{post.title}}
+  </h3>
+  <h5>
+    {{post.user.userName}} on {{formatDate post.date}}
+  </h5>
+  <div class="postContainerText">
+    <p>{{post.content}}</p>
+  </div>
+</div>
+<div class="makeCommentBox">
+  <form class="commentForm">
+    <label>Comment:</label>
+    <input type="hidden" name="postID" value="{{post.id}}"/>
+    <div>
+      <textarea class="commentTextarea" name="commentBody"></textarea>
+    </div>
+    <button class="loginBtn">Submit</button>
+  </form>
+</div>
+
+<div>
+  {{#each comments as |comment|}}
+  {{> commentPartials comment}}
+  {{/each}}
+</div>
+<script src="/js/comment.js"></script>
