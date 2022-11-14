@@ -52,6 +52,10 @@ header {
     box-shadow: 4px 4px 0px #A7A7A7;
 }
 
+.signedIn {
+    margin-left: 15px;
+}
+
 /* Posts */
 
 #postClick {
@@ -153,4 +157,41 @@ header {
     margin: 5px 4px 2px;
     padding: 10px;
     color: var(--darkBrown);
+}
+
+/* Dashboard */
+
+#newPost {
+    margin: auto;
+    width: 25%;
+    background: var(--darkBrown);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#newPost a {
+    display: block;
+    color: var(--lightBlue);
+    text-decoration: none;
+    text-align: center;
+}
+
+.newPostContainer {
+    background: var(--darkBrown);
+    color: var(--lightBlue);
+    padding: 10px;
+    margin: 25px 50px;
+}
+
+.newPostForm {
+    background-color: var(--lightBlue);
+    color: var(--darkBrown);
+    padding: 5px;
+    margin: 5px;
+}
+
+.formInput2 {
+    width: 99%;
+    height: 100px;
+    resize: none;
 }
